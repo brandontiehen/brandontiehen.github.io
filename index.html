@@ -1,22 +1,28 @@
 <!DOCTYPE html>
+<!--Brandon Tiehen - Front End Developer Portfolio-->
 <html lang="en-US">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="title" content="Brandon Tiehen | Web Designer & Developer">
+        <meta name="title" content="Brandon Tiehen | Front End Developer">
         <meta name="description" content="Front-End Web Designer and Developer, skilled in HTML, CSS, JavaScript and jQuery, PHP, and SQL.">
         <meta charset="UTF-8">
-        <title>Brandon Tiehen | Web Designer & Developer</title>
+        <title>Brandon Tiehen | Front End Developer</title>
         <style>
             *{font-family:Sans-Serif;}
             h1{font-size:1.4rem;}
             p{font-size:1.0rem;}
-            body{background:#1a4d61; color:#f4f3d2;}
+	    a{color:turquoise;}
+            body{background:#0B2B42; color:#f4f3d2;text-align:Center;}
+	    #placeholder{max-width:90vw; margin:0 auto; padding:2%;}
         </style>
         <script>
-
+	    function waiting(){
+		document.getElementById("placeholder").innerHTML="<h1>Thanks for stopping by!</h1><br/><h2>Webpage in progress</h2><br/><p>Feel free to check out my work on <a href='https://github.com/brandontiehen'>GitHub</a>.</a></p>";
+	    }
         </script>
     </head>
-    <body>
-        <noscript><h1>Webpage in progress</h1><br/><p>Feel free to check out my work on <a href="https://github.com/brandontiehen">GitHub</a>.</a></p></noscript>
+    <body onLoad="waiting()">
+        <noscript><h1>Thanks for stopping by!</h1><br/><h2>Webpage in progress</h2><br/><p>Feel free to check out my work on <a href="https://github.com/brandontiehen">GitHub</a>.</a></p></noscript>
+	<div id="placeholder"></div>
     </body>
 </html>
