@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+re<!DOCTYPE html>
 <!--Brandon Tiehen - Front End Developer Portfolio-->
 <html lang="en-US">
     <head>
@@ -16,13 +16,11 @@
 	    #placeholder{max-width:90vw; margin:0 auto; padding:2%;}
         </style>
         <script>
-	    function waiting(){
-		document.getElementById("placeholder").innerHTML="<h1>Thanks for stopping by!</h1><br/><h2>Webpage in progress</h2><br/><p>Feel free to check out my work on <a href='https://github.com/brandontiehen'>GitHub</a>, or see my <a href='http://brandontiehenfilm.myartsonline.com'>creative/video portfolio here</a>, developed using HTML, CSS, and jQuery.</a></p>";
-	    }
+	    function redirector() = window.location.href="https://brandontn.com/dev";
         </script>
     </head>
-    <body onLoad="waiting()">
-        <noscript><h1>Thanks for stopping by!</h1><br/><h2>Webpage in progress</h2><br/><p>Feel free to check out my work on <a href="https://github.com/brandontiehen">GitHub</a>, or see my <a href='http://brandontiehenfilm.myartsonline.com'>creative/video portfolio here</a>, developed using HTML, CSS, and jQuery.</a></p></noscript>
+    <body onLoad="redirector()">
+        <noscript><h1>Thanks for stopping by!</h1><br/><h2>Redirection imminent...</h2><br/><p>If you're not redirected within the next 10 seconds, click <a href="https://brandontn.com/dev">here to Enter the my portfolio site.</a>, or see my <a href='https://github.com/brandontiehen'>see my GitHub profile here</a>.</p></noscript>
 	<div id="placeholder"></div>
     </body>
 </html>
